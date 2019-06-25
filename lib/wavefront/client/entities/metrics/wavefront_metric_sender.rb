@@ -41,6 +41,6 @@ module WavefrontMetricSender
     if !name.start_with?(Wavefront::DELTA_PREFIX) && !name.start_with?(Wavefront::DELTA_PREFIX_2)
       name = Wavefront::DELTA_PREFIX + name
     end
-    send_metric(name, value, None, source, tags)
+    send_metric(name, value, nil, source, tags)
   end
 end
